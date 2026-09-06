@@ -13,7 +13,7 @@ export const site = {
     headline: "BRINCO",
     subhead: "Book your next project",
   },
-  email: "kailainathanjeiharey@gmail.com",
+  email: "info@brinco.lk",
   /** Add real profile URLs here. Empty string = icon hidden. */
   socials: [
     { label: "Facebook", icon: "facebook", url: "https://www.facebook.com/profile.php?id=61551897634287&_rdc=1&_rdr#" },
