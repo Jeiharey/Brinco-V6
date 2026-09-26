@@ -311,14 +311,19 @@ function ServicePage() {
                 item{selected.length === 1 ? "" : "s"} selected
               </span>
             </p>
-            <button
-              type="submit"
-              form="quote-form-el"
-              disabled={selected.length === 0 || loading}
-              className="focus-ring glow-signal inline-flex min-h-[48px] items-center gap-3 rounded-full bg-primary px-6 text-sm font-semibold tracking-widest text-primary-foreground uppercase transition-colors duration-200 disabled:cursor-not-allowed disabled:opacity-35"
-            >
-              {loading ? "Sending…" : "Request a custom quote"}
-            </button>
+            <div className="flex flex-col items-center gap-1">
+              <button
+                type="submit"
+                form="quote-form-el"
+                disabled={selected.length === 0 || loading}
+                className="focus-ring glow-signal inline-flex min-h-[48px] items-center gap-3 rounded-full bg-primary px-6 text-sm font-semibold tracking-widest text-primary-foreground uppercase transition-colors duration-200 disabled:cursor-not-allowed disabled:opacity-35"
+              >
+                {loading ? "Sending…" : "Send inquiry"}
+              </button>
+              <p className="text-[11px] text-muted-foreground">
+                Or email <strong className="font-semibold text-foreground">info@brinco.lk</strong>
+              </p>
+            </div>
           </div>
         </div>
 
