@@ -21,7 +21,7 @@ export function BrandMark() {
       <img
         src="/Brinco%20logo.png"
         alt=""
-        className="h-8 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.03]"
+        className="h-9 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.03]"
       />
     </Link>
   );
