@@ -22,7 +22,7 @@ const schema = z.object({
 });
 
 export const submitBooking = createServerFn({ method: "POST" })
-  .inputValidator((input: unknown) => schema.parse(input))
+  .validator((input: unknown) => schema.parse(input))
   .handler(async ({ data }) => {
     const { sendBookingEmail } = await import("@/lib/mailer.server");
 
