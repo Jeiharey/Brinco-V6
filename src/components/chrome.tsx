@@ -18,8 +18,11 @@ export function BrandMark() {
       className="focus-ring group inline-flex items-center gap-2"
       aria-label={`${site.brand} — home`}
     >
-      <span className="block h-2 w-2 rounded-full bg-signal transition-transform duration-300 group-hover:scale-125" />
-      <span className="tech-caps text-lg sm:text-xl">{site.brand}</span>
+      <img
+        src="/Brinco%20logo.png"
+        alt=""
+        className="h-8 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.03]"
+      />
     </Link>
   );
 }
